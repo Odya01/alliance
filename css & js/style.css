@@ -116,7 +116,7 @@ a{
 
   margin-right: 16px;
 
-  background-image: url(/images/tel-svg.svg);
+  background-image: url(../images/tel-svg.svg);
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -125,7 +125,7 @@ a{
   width: 18px;
   height: 18px;
 
-  background-image: url(/images/burger.svg);
+  background-image: url(../images/burger.svg);
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -623,7 +623,7 @@ a{
   background-color: rgba(50, 139, 164, 1);
 }
 .link__icon-burger_active{
-  background-image: url(/images/krest.svg);
+  background-image: url(../images/krest.svg);
 }
 .overflow{
   overflow: hidden;
