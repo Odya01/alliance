@@ -8,6 +8,35 @@
   .container{
     padding: 0 16px;
   }
+  .local__container{
+    justify-content: center;
+    align-items: center;
+  }
+  .local__position{
+    margin: 0;
+    margin-bottom: 32px;
+  }
+  .blog__content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer__description{
+    flex-direction: column;
+    align-items: baseline;
+  }
+  .blog__content .blog-card{
+    display: none;
+  }
+  .blog__content .swiper{
+    display: block;
+    width: 429px;
+    height: 501px;
+  }
+  .swiper-slide .blog-card{
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 1250px){
@@ -19,14 +48,38 @@
   }
 }
 
+@media (max-width: 1000px){
+  .moving__cards .swiper{
+    display: block;
+    width: 288px;
+    height: 251px;
+  }
+  .swiper-slide .card__item{
+    padding: 0;
+    width: 100%;
+  }
+  .card__icon{
+    width: 40px;
+    height: 40px;
+  }
+  .card__icon span{
+    width: 20px;
+    height: 22px;
+  }
+  .moving__cards .card__item{
+    display: none;
+  }
+  .swiper-slide .card__item{
+    display: flex;
+  }
+}
+
 @media (max-width: 850px){
   .header__logo{
     width: 150px;
     background-size: contain;
   }
-  .footer__description{
-    flex-direction: column;
-  }
+  
   .footer__text:not(:last-child){
     margin: 0;
     margin-bottom: 8px;
@@ -34,9 +87,26 @@
   .blog{
     padding: 40px 0;
   }
+  .blog-card__text{
+    margin: 0;
+    display: none;
+  }
+  .title-text__heading,
+  .looking-content__header,
+  .local__heading,
+  .form__heading{
+    margin-bottom: 32px;
+    font-size: 20px;
+  }
+  .swiper-slide .blog-card__img{
+    width: 100%;
+  }
 }
 
 @media (max-width: 650px){
+  .header{
+    padding: 15px 0;
+  }
   .tel__text,
   .header__line,
   .header__btn{
@@ -56,5 +126,51 @@
   }
   .link__icon-burger{
     display: block;
+  }
+  .container__map iframe{
+    height: 245px;
+  }
+  .local__form{
+    padding: 24px;
+  }
+  .form{
+    flex-direction: column;
+  }
+  .input-label{
+    width: 100%;
+  }
+  .input-label:first-child{
+    margin: 0;
+  }
+  .input-label__input_big,
+  .input-label__input{
+    width: 100%;
+  }
+  .form__btn{
+    width: 100%;
+  }
+  .looking-content{
+    padding-top: 250px;
+  }
+  .looking-content__header{
+    padding-left: 8px;
+    font-weight: 600;
+    line-height: 23.46px;
+  }
+  .looking-content__text{
+    padding: 0;
+  }
+  .blog-card{
+    width: auto;
+  }
+  .blog__heading{
+    flex-direction: column;
+  }
+
+  .moving{
+    padding: 40px 0;
+  }
+  .local{
+    padding: 40px 0;
   }
 }

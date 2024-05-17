@@ -41,14 +41,17 @@ a{
 
 
 /* header */
-.header__container{
+.header__banner{
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 .header{
-  /* position: sticky; */
+  position: sticky;
+  top: 0;
+  z-index: 2;
   padding: 24px 0;
+  box-shadow: 1px 1px 12px 0px rgba(71, 71, 71, 0.03);
   background-color: var(--white);
 }
 .header__logo{
@@ -72,6 +75,7 @@ a{
 }
 .nav__link{
   color: var(--text);
+  font-size: 16px;
 }
 .nav__link::after{
   content: '';
@@ -445,6 +449,12 @@ a{
   border-radius: 4px;
   border: 1px solid rgba(224, 224, 224, 1);
 }
+.input-label__input_big{
+  width: 436px;
+}
+.input-label__input-textarea{
+  height: 73px;
+}
 .form__btn{
   padding: 14px 24px;
   background-color: var(--yellow);
@@ -545,6 +555,12 @@ a{
   line-height: 26.77px;
   color: var(--cardDiscr);
 }
+.swiper{
+  display: none;
+}
+.swiper-pagination-bullet-active{
+  background: var(--yellow);
+}
 
 
 
@@ -570,5 +586,42 @@ a{
   color: rgba(115, 134, 151, 1);
 }
 
+.header__container{
+  position: relative;
+}
+.active{
+  display: flex;
+}
+.nav__burger{
+  padding: 56px 16px 1000px 16px;
+  position: sticky;
+  z-index: 99;
+  
+  display: none;
+  flex-direction: column;
 
-
+  background-color: var(--white);
+}
+.nav__burger .nav__link{
+  font-size: 20px;
+}
+.active{
+  display: flex;
+}
+.nav__burger .nav__list {
+  flex-direction: column;
+  align-items: baseline;
+  margin-bottom: 120px;
+}
+.burger__btn{
+  background-color: var(--blue);
+}
+.burger__btn:hover{
+  background-color: rgba(50, 139, 164, 1);
+}
+.link__icon-burger_active{
+  background-image: url(/images/krest.svg);
+}
+.overflow{
+  overflow: hidden;
+}

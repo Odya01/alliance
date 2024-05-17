@@ -1,28 +1,9 @@
-initMap();
+const burgerBtn = document.querySelector('.link__burger');
+const burgerIcon = document.querySelector('.link__icon-burger');
+const burgerMenu = document.querySelector('.nav__burger');
 
-async function initMap() {
-    // Промис `ymaps3.ready` будет зарезолвлен, когда загрузятся все компоненты основного модуля API
-    await ymaps3.ready;
-
-    const {YMap, YMapDefaultSchemeLayer} = ymaps3;
-
-    // Иницилиазируем карту
-    const map = new YMap(
-        // Передаём ссылку на HTMLElement контейнера
-        document.getElementById('map'),
-
-        // Передаём параметры инициализации карты
-        {
-            location: {
-                // Координаты центра карты
-                center: [37.588144, 55.733842],
-
-                // Уровень масштабирования
-                zoom: 10
-            }
-        }
-    );
-
-    // Добавляем слой для отображения схематической карты
-    map.addChild(new YMapDefaultSchemeLayer());
-}
+burgerBtn.addEventListener('click', ()=>{
+    burgerMenu.classList.toggle('active');
+    burgerIcon.classList.toggle('link__icon-burger_active');
+    document.body.classList.toggle('overflow');
+});
